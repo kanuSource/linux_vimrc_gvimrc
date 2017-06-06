@@ -35,8 +35,8 @@ nmap <C-l> <C-w>l
 
 " [NMAP] WINDOW SIZING CONFIG
 " ===========================
-nmap <A-[> :vertical resize +5<cr>
-nmap <A-]> :vertical resize -5<cr>
+nmap <A-]> :vertical resize +5<cr>
+nmap <A-[> :vertical resize -5<cr>
 nmap <A-'> :resize +5<cr>
 nmap <A-;> :resize -5<cr>
 nmap <A-=> <C-w>=
