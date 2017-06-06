@@ -225,8 +225,8 @@ highlight ColorColumn guibg=#004652
 " }}}
 
 
-" [CONFIG] {VIM} MAPPINGS {{{
-" ===========================
+" [CONFIG] MAPPINGS {{{
+" =====================
 
 " [NMAP CONFIG] {{{
 " =================
@@ -441,8 +441,8 @@ onoremap iNt :<c-u>normal! F>lvt<<cr>
 
 " }}}
 
-" [CONFIG] {VIM} AUTOCMDS {{{
-" ===========================
+" [CONFIG] AUTOCMDS {{{
+" =====================
 
 " [VIM] AUTOCOMMANDS {{{
 " ======================
@@ -624,8 +624,8 @@ augroup END
 
 " }}}
 
-" [CONFIG] {PLUGIN} SETTINGS {{{
-" ==============================
+" [CONFIG] PLUGIN SETTINGS {{{
+" ============================
 
 " [SET] {DELIMITMATE} CONFIG
 " ==========================
@@ -687,4 +687,9 @@ nnoremap <leader>gp :!git push<cr>
 " [NNOREMAP] {DO ALIGN} TOGGLE
 " ============================
 vnoremap <leader>da :EasyAlign<cr>=
+" }}}
+
+" [CONFIG] XPERIMENTAL MAPPINGS {{{
+" =================================
+nnoremap <leader>' f"vi"
 " }}}
