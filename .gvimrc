@@ -559,7 +559,7 @@ augroup filetype_php
 
     " [CONFIG] PHP DEBUG SHORTCUT SNIPPET
     " ===================================
-    autocmd FileType php inoremap <buffer> <leader>vd $cyber_debug->vd();<esc>hi
+    autocmd FileType php inoremap <buffer> <leader>vd $cyber_core_utility->core_dev_vd();<esc>hi
 
     " [CONFIG] JAVASCRIPT SEMI COLON INSERTION SHORTCUT
     " =================================================
@@ -635,7 +635,7 @@ let delimitMate_matchpairs = "(:),[:],{:}"
 " =======================
 let NERDTreeShowLineNumbers       = 1
 let NERDTreeCascadeSingleChildDir = 0
-let NERDTreeQuitOnOpen            = 1
+let NERDTreeQuitOnOpen            = 0
 let NERDTreeWinPos                = "left"
 let NERDTreeAutoDeleteBuffer      = 1
 
@@ -691,5 +691,11 @@ vnoremap <leader>da :EasyAlign<cr>=
 
 " [CONFIG] XPERIMENTAL MAPPINGS {{{
 " =================================
-nnoremap <leader>' f"vi"
+nnoremap <leader>' f'vi'
+nnoremap <leader>" f"vi"
+nnoremap <leader>] f]vi]
+nnoremap <leader>[ f]vi]
+nnoremap <leader>0 f)vi)
+nnoremap <leader>9 f)vi)
+nnoremap <leader>cb vE"ay}o<c-r>"<space>=<space>(bool)<c-r>";<esc>0f$ab_<esc>^O// [CONVERT] TO BOOL<esc>o//<space>=============================<esc>j^
 " }}}
