@@ -317,7 +317,7 @@ nnoremap <leader>bd :bufdo bd<cr>
 " ========================
 " [INOREMAP] REMAP ESC KEY AND SAVE
 " ================================
-inoremap jk <esc>
+inoremap jk <esc>:w<cr>
 
 " [INOREMAP] INSERT REMAP ESC TO NO-OPERATION
 " ===========================================
@@ -691,8 +691,11 @@ vnoremap <leader>da :EasyAlign<cr>=
 
 " [CONFIG] XPERIMENTAL MAPPINGS {{{
 " =================================
-nnoremap <leader>' f'vi'
-nnoremap <leader>" f"vi"
+nnoremap <leader>' f"vi"
+nnoremap <leader>" f'vi'
+nnoremap <leader>` f`vi`
+nnoremap <leader>} f}vi}
+nnoremap <leader>{ f}vi}
 nnoremap <leader>] f]vi]
 nnoremap <leader>[ f]vi]
 nnoremap <leader>0 f)vi)
