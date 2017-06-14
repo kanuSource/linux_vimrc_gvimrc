@@ -159,6 +159,10 @@ set completeopt-=preview
 " [SET] VIM ICON
 " ==============
 set guioptions=i
+
+" [SET] DONT SHOW CURRENT MODE
+" ============================
+set noshowmode 
 " }}}
 
 " [CONFIG] COLORSCHEME {{{
@@ -700,5 +704,5 @@ nnoremap <leader>] f]vi]
 nnoremap <leader>[ f]vi]
 nnoremap <leader>0 f)vi)
 nnoremap <leader>9 f)vi)
-nnoremap <leader>cb vE"ay}o<c-r>"<space>=<space>(bool)<c-r>";<esc>0f$ab_<esc>^O// [CONVERT] TO BOOL<esc>o//<space>=============================<esc>j^
+nnoremap <leader>cb vE"ay}o<c-r>"<space>=<space>(bool)<c-r>";<esc>0f$ab_<esc>^O// [CONVERT] TO BOOL<esc>o//<space>=================<esc>j^
 " }}}
