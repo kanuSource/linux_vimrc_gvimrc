@@ -162,7 +162,11 @@ set guioptions=i
 
 " [SET] DONT SHOW CURRENT MODE
 " ============================
-set noshowmode 
+set noshowmode
+
+" [SET] NOWRAP DONT WRAP LINES
+" ============================
+set nowrap
 " }}}
 
 " [CONFIG] COLORSCHEME {{{
@@ -173,7 +177,8 @@ colorscheme colorsbox-material
 
 " [SET] FONT FAMILY && SIZE
 " =========================
-set guifont=Cousine\ for\ Powerline\ 14
+" set guifont=Cousine\ for\ Powerline\ 14
+set guifont=Hack\ 14
 
 " [SET] CURSORLINE SETTINGS
 " =========================
@@ -705,4 +710,9 @@ nnoremap <leader>[ f]vi]
 nnoremap <leader>0 f)vi)
 nnoremap <leader>9 f)vi)
 nnoremap <leader>cb vE"ay}o<c-r>"<space>=<space>(bool)<c-r>";<esc>0f$ab_<esc>^O// [CONVERT] TO BOOL<esc>o//<space>=================<esc>j^
+nnoremap <leader>cv vE"ay}o$b_<c-r>"<esc>F$x$a<space>=<space>$cyber_core_utility->validate_query_result();<esc>h"aP^O// [VALIDATE] RESULTS<esc>o//<space>==================<esc>j^
+nnoremap <leader>sf :source %<cr>
+nnoremap <leader>sn :NeoCompleteLock<cr>
+nnoremap <leader>sc :Colortuner<cr>
+nnoremap <leader>sd hj2lD^
 " }}}
