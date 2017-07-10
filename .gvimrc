@@ -173,7 +173,8 @@ set nowrap
 " ========================
 " [DEFINE] COLORSCHEME
 " ====================
-colorscheme colorsbox-material
+colorscheme colorsbox-steighties
+" colorscheme monokai-phoenix
 
 " [SET] FONT FAMILY && SIZE
 " =========================
@@ -327,6 +328,7 @@ nnoremap <leader>bd :bufdo bd<cr>
 " [INOREMAP] REMAP ESC KEY AND SAVE
 " ================================
 inoremap jk <esc>:w<cr>
+inoremap JK <esc>:w<cr>
 
 " [INOREMAP] INSERT REMAP ESC TO NO-OPERATION
 " ===========================================
